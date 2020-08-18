@@ -2760,7 +2760,7 @@ input, select, textarea {
 
 @-webkit-keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -600px;
     }
     100% {
         margin-left: 100%;
@@ -2769,7 +2769,7 @@ input, select, textarea {
 
 @-moz-keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -600px;
     }
     100% {
         margin-left: 100%;
@@ -2778,7 +2778,7 @@ input, select, textarea {
 
 @keyframes animateCloud {
     0% {
-        margin-left: -1000px;
+        margin-left: -600px;
     }
     100% {
         margin-left: 100%;
@@ -2788,9 +2788,9 @@ input, select, textarea {
 /* ANIMATIONS */
 
 .cloud1 {
-    -webkit-animation: animateCloud 35s linear infinite;
-	-moz-animation: animateCloud 35s linear infinite;
-	animation: animateCloud 35s linear infinite;
+    -webkit-animation: animateCloud 30s linear infinite;
+	-moz-animation: animateCloud 30s linear infinite;
+	animation: animateCloud 30s linear infinite;
     
 	
 	-webkit-transform: scale(0.67);
@@ -2799,9 +2799,9 @@ input, select, textarea {
 }
 
 .cloud2 {
-	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
+	-webkit-animation: animateCloud 15s linear infinite;
+	-moz-animation: animateCloud 15s linear infinite;
+	animation: animateCloud 15s linear infinite;
 	
 	-webkit-transform: scale(0.35);
 	-moz-transform: scale(0.35);
@@ -2809,9 +2809,9 @@ input, select, textarea {
 }
 
 .cloud3 {
-	-webkit-animation: animateCloud 30s linear infinite;
-	-moz-animation: animateCloud 30s linear infinite;
-	animation: animateCloud 30s linear infinite;
+	-webkit-animation: animateCloud 25s linear infinite;
+	-moz-animation: animateCloud 25s linear infinite;
+	animation: animateCloud 25s linear infinite;
 	
 	-webkit-transform: scale(0.5);
 	-moz-transform: scale(0.5);
@@ -2819,9 +2819,9 @@ input, select, textarea {
 }
 
 .cloud4 {
-	-webkit-animation: animateCloud 18s linear infinite;
-	-moz-animation: animateCloud 18s linear infinite;
-	animation: animateCloud 18s linear infinite;
+	-webkit-animation: animateCloud 13s linear infinite;
+	-moz-animation: animateCloud 13s linear infinite;
+	animation: animateCloud 13s linear infinite;
 	
 	-webkit-transform: scale(0.45);
 	-moz-transform: scale(0.45);
@@ -2829,9 +2829,9 @@ input, select, textarea {
 }
 
 .cloud5 {
-	-webkit-animation: animateCloud 25s linear infinite;
-	-moz-animation: animateCloud 25s linear infinite;
-	animation: animateCloud 25s linear infinite;
+	-webkit-animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 20s linear infinite;
+	animation: animateCloud 20s linear infinite;
 	
 	-webkit-transform: scale(0.55);
 	-moz-transform: scale(0.55);
