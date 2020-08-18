@@ -2788,7 +2788,7 @@ input, select, textarea {
 /* ANIMATIONS */
 
 .cloud1 {
-	-webkit-animation: animateCloud 35s linear infinite;
+    -webkit-animation: animateCloud 35s linear infinite;
 	-moz-animation: animateCloud 35s linear infinite;
 	animation: animateCloud 35s linear infinite;
     
