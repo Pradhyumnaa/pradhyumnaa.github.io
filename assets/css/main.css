@@ -2801,13 +2801,9 @@ input, select, textarea {
 }
 
 .cloud2 {
-	-webkit-animation: animateCloud 15s linear infinite;
-	-moz-animation: animateCloud 15s linear infinite;
-	animation: animateCloud 15s linear infinite;
-	
-	-webkit-transform: scale(0.35);
-	-moz-transform: scale(0.35);
-	transform: scale(0.35);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	transform: scale(0.0);
 }
 
 .cloud3 {
@@ -2821,9 +2817,9 @@ input, select, textarea {
 }
 
 .cloud4 {
-	-webkit-animation: animateCloud 13s linear infinite;
-	-moz-animation: animateCloud 13s linear infinite;
-	animation: animateCloud 13s linear infinite;
+	-webkit-animation: animateCloud 20s linear infinite;
+	-moz-animation: animateCloud 20s linear infinite;
+	animation: animateCloud 20s linear infinite;
 	
 	-webkit-transform: scale(0.45);
 	-moz-transform: scale(0.45);
@@ -2831,9 +2827,9 @@ input, select, textarea {
 }
 
 .cloud5 {
-	-webkit-animation: animateCloud 20s linear infinite;
-	-moz-animation: animateCloud 20s linear infinite;
-	animation: animateCloud 20s linear infinite;
+	-webkit-animation: animateCloud 15s linear infinite;
+	-moz-animation: animateCloud 15s linear infinite;
+	animation: animateCloud 15s linear infinite;
 	
 	-webkit-transform: scale(0.55);
 	-moz-transform: scale(0.55);
