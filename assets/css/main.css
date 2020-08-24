@@ -2880,5 +2880,55 @@ input, select, textarea {
 	top: -90px;
 }
 
+/* Colors of the Wallet Application */
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 100px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+#card1{
+    background-color: #2C497F;
+}
+
+#card2{
+    background-color: #51E5FF;
+}
+
+#card3{
+    background-color: #FFE548;
+}
+
+
+
+
+
+
 
 
