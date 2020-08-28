@@ -2795,6 +2795,10 @@ input, select, textarea {
     background-color: #FFE548;
 }
 
+.lined{
+    border: 2px solid black;
+    background-color: black;
+}
 
 
 
