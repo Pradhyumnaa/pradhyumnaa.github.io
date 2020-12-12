@@ -128,7 +128,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 16pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -157,7 +157,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 900;
+		font-weight: 200;
 	}
 
 	em, i {
@@ -169,7 +169,7 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 2em;
 		font-weight: 700;
 		line-height: 1.3;
 		margin: 0 0 1em 0;
@@ -2800,6 +2800,45 @@ input, select, textarea {
     background-color: black;
 }
 
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #181A19;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #C0C0C0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav b{
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #696969;
+    
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
 
 
 
