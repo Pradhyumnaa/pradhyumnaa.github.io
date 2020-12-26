@@ -2914,5 +2914,22 @@ li.dropdown {
 }
 
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img{
+    border: 5px solid #555;
+}
+
 
 
