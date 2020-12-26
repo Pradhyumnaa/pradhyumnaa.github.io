@@ -2975,8 +2975,10 @@ img{
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 1000px;
+  
+    max-width: 1000px;
     max-height: 1300px;
+    
 
 }
 
@@ -2990,6 +2992,7 @@ img{
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+    
 }
 
 /* Add Animation - Zoom in the Modal */
