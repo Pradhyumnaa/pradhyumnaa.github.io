@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Application 2</title>
+		<title>The Ethereal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,7 +31,7 @@
                         <a href="javascript:void(0)" class="dropbtn">Projects</a>
                         <div class="dropdown-content">
                             <a href="Application1.html">BookNest</a>
-                            <a href="Application2.html">Link 2</a>
+                            <a href="Application2.html">The Ethereal</a>
                             <a href="Application3.html">Link 3</a>
                             <a href="Application4.html">Link 4</a>
                             <a href="Application5.html">Link 5</a>
@@ -61,17 +61,34 @@
 							
                             
                             <br><br>
-                            <h1>App Name</h1>
+                            <h1>The Ethereal</h1>
                             <hr class="lined">
-                            <p></p>
+                            <p>The Ethereal is a concept of a Luxury Restaurant which also offers Meeting Rooms and this is the website I designed for it.</p>
+                            <p>The main target audience of this restaurant are the plethora of business people in The Hague who are looking for an elegant, classic and luxurious place to hold their business meetings while also dining on exquisitely prepared meals. You could also wish the food to be delivered to your office.</p>
+                            
+                            <button type="button" onclick=" window.open('https://marvelapp.com/prototype/6fi3947','_blank')">View Prototype</button>
+                            <br><br>
                             							
                             <h1>Moodboard</h1>
                             <hr class="lined">
-                            <p></p>
                             
+                                <img id = "moodboard" class="imgcontent" src="images/Ethereal/Moodboard_Ethereal.jpg" alt="MoodBoard" style="width:85%">
+                            
+                            <div id="myModal" class="modal">
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            
+                            <br><br>
                             <h1>Sample User Personas</h1>
                             <hr class="lined">
-                            <p></p>
+                            <p>
+                            <img id = "persona" class="imgcontent" src="images/Ethereal/User%20Personas.jpg" alt="User Persona" style="width:85%">
+                            </p>
                                 
 <!--
                                <div class="row">
@@ -89,17 +106,31 @@
                                 <br><br>
 -->
                             
-                            <h1>Pattern Library</h1>
-                            <hr class="lined">
-                            <p></p>
-                            
-                            <h1>Static Interface</h1>
-                            <hr class="lined">
-                            <p></p>
                             
                             <h1>Sitemap</h1>
                             <hr class="lined">
-                            <p></p>
+                            <p>
+                            <img id = "sitemap" class="imgcontent" src="images/Ethereal/Sitemap_Ethereal.jpg" alt="Snow" style="width:85%">
+                            
+                            
+                            </p>
+                            
+                            <h1>Wireframes</h1>
+                            <hr class="lined">
+                            <p>
+                                The wireframes below showcase below the intial idea I had for the Home Page and the Contact Page. I landed with the idea of using a side bar for the menu because most other websites I had seen for a restaurant, used a top bar and very few used a side bar so I wanted to try it out for a change.
+                            
+                            </p>
+                            
+                            <div class="row">
+                                    <div class="column">
+                                        <img id = "wireframepage1" class="imgcontent" src="images/Ethereal/Home%20Page.jpg" alt="Snow" style="width:100%">
+                                    </div>
+                                    <div class="column">
+                                        <img id = "wireframepage2" class="imgcontent" src="images/Ethereal/Contact%20Page.jpg" alt="Forest" style="width:100%">
+                                    </div>
+                                    
+                            </div>
                             
                             </div>
 					</div>
@@ -114,6 +145,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        
+        
+         <script>
+            var modal = document.getElementById("myModal");
+            var i;
+            var img = document.getElementsByClassName("imgcontent");
+            var modalImg = document.getElementById("img01");
+            for(i=0;i< img.length;i++)
+            {    
+                img[i].onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+            
+            }
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+   modal.style.display = "none";
+}
+        
+        
+        </script>
 
 	</body>
 </html>
