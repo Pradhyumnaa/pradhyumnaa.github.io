@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Application 3</title>
+		<title>Free Kick</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -32,7 +32,7 @@
                         <div class="dropdown-content">
                             <a href="Application1.html">BookNest</a>
                             <a href="Application2.html">The Ethereal</a>
-                            <a href="Application3.html">Link 3</a>
+                            <a href="Application3.html">Free Kick</a>
                             <a href="Application4.html">Link 4</a>
                             <a href="Application5.html">Link 5</a>
                             <a href="Application6.html">Link 6</a>
@@ -61,17 +61,32 @@
 							
                             
                             <br><br>
-                            <h1>App Name</h1>
+                            <h1>Free Kick</h1>
                             <hr class="lined">
-                            <p></p>
+                            <p>Free Kick is an ECommerce website that sells Football Equipements such as Shoes,
+                            Jerseys, Shorts and Balls. They are a dealer and they buy these equipments from Adidas, Nike and other brands and sells them. Companies such as Adidas or Nike limit their Football Equipment in certain countries due to the popularity being lesser than other sports and Free Kick offers those who want to play The Beautiful Game in those countries a wide range of options to choose from for the equipemnts.</p>
+                            
+                          
+                            <button type="button" onclick=" window.open('https://marvelapp.com/prototype/5j31hji','_blank')">View Prototype</button>
+                            <br><br>
+
                             							
                             <h1>Moodboard</h1>
                             <hr class="lined">
-                            <p></p>
                             
-                            <h1>Sample User Personas</h1>
-                            <hr class="lined">
-                            <p></p>
+                                <img id = "moodboard" class="imgcontent" src="images/FreeKick/Moodboard.jpg" alt="MoodBoard" style="width:85%">
+                            
+                            <div id="myModal" class="modal">
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            
+                            <br><br>
+                            
                                 
 <!--
                                <div class="row">
@@ -89,17 +104,30 @@
                                 <br><br>
 -->
                             
-                            <h1>Pattern Library</h1>
-                            <hr class="lined">
-                            <p></p>
                             
-                            <h1>Static Interface</h1>
-                            <hr class="lined">
-                            <p></p>
                             
-                            <h1>Sitemap</h1>
+                            
+                            
+                            </p>
+                            
+                            <h1>Wireframes</h1>
                             <hr class="lined">
-                            <p></p>
+                            <p>
+                                The wireframes below showcase below the intial idea I had for the Landing Page, Shoes Page and the Product Description Page. I realised that the Landing Page for an ECommerce Website is of upmost importance, hence I planned to add an attractive picture in the Landing Page for better attraction. I also realised that Top Arrivals and Best Sellers had to be included due to the various examples of ECommerce websites I saw before I designed this one. I was under a dilemma of whether to have the user scroll more or click more when accessing this. I chose click more because in my opinion, it is easier to organise the items during display and that during scrolling, there is too much information on the same page.
+                            
+                            </p>
+                            
+                            <div class="row">
+                                    <div class="column">
+                                        <img id = "wireframepage1" class="imgcontent" src="images/FreeKick/Wireframe%201.png" alt="Snow" style="width:100%">
+                                    </div>
+                                    <div class="column">
+                                        <img id = "wireframepage2" class="imgcontent" src="images/FreeKick/Wireframe%202.png" alt="Forest" style="width:100%">
+                                    </div>
+                                    <div class="column">
+                                        <img id = "wireframepage2" class="imgcontent" src="images/FreeKick/Wireframe%203.png" alt="Forest" style="width:100%">
+                                    </div>
+                            </div>
                             
                             </div>
 					</div>
@@ -114,6 +142,31 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        
+        
+         <script>
+            var modal = document.getElementById("myModal");
+            var i;
+            var img = document.getElementsByClassName("imgcontent");
+            var modalImg = document.getElementById("img01");
+            for(i=0;i< img.length;i++)
+            {    
+                img[i].onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                }
+            
+            }
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+   modal.style.display = "none";
+}
+        
+        
+        </script>
 
 	</body>
 </html>
