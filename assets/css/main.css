@@ -2966,6 +2966,35 @@ img{
     color: blue;
 }
 
+/*
+@keyframes bgColor {
+  12.5% {
+    color: #F7567C;
+  }
+  25% {
+    color: #05299E;
+  }
+  37.5% {
+    color: #5E4AE3;
+  }
+  50% {
+    color: #3772FF;
+  }
+  62.5% {
+    color: #222E50;
+  }
+  75% {
+    color: #F84AA7;
+  }
+  87.5% {
+    color: #FF3562;
+  }
+  100% {
+    color: #22007C;
+  }
+}
+*/
+
 
 
 

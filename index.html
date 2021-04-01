@@ -185,6 +185,8 @@
             const typedTextSpan = document.querySelector(".typed-text");
             const cursorSpan = document.querySelector(".cursor");
             const textArray = ["User Experience Designer.", "Product Designer.", "Interaction Designer.", "User Researcher."];
+            const textClr = ["blue", "#d62839", "#f6f930", "#f7567c"];
+            
             const typingDelay = 50;
             const erasingDelay = 50;
             const newTextDelay = 1000; // Delay between current and next text
@@ -197,9 +199,11 @@
                     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
                     charIndex++;
                     setTimeout(type, typingDelay);
+                    
                 } 
                 else {
                     cursorSpan.classList.remove("typing");
+                    
                     setTimeout(erase, newTextDelay);
                 }
             }
@@ -219,6 +223,7 @@
             }
             document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
                 if(textArray.length) setTimeout(type, newTextDelay + 250);
+                
             });
         
         
