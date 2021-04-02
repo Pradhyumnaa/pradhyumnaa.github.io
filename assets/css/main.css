@@ -2475,11 +2475,11 @@ input, select, textarea {
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #F9C22E;
+				
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8F3985;
+				
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
