@@ -28,9 +28,11 @@
                         <a href="javascript:void(0)" class="dropbtn">Projects</a>
                         <div class="dropdown-content">
                             <a href="Application1.html">BookNest</a>
+<!--
                             <a href="Application2.html">The Ethereal</a>
                             <a href="Application3.html">Free Kick</a>
                             <a href="Application4.html">Glassmorphism</a>
+-->
                             <a href="Application5.html">Arcade Application Design</a>
                             <a href="Application6.html">Bicycle Application Design</a>
                         </div>
@@ -81,6 +83,7 @@
 									</a>
 								</article>
 								
+<!--
                                 <article class="style2">
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
@@ -92,7 +95,9 @@
 										</div>
 									</a>
 								</article>
+-->
 								
+<!--
                                 <article class="style3">
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
@@ -105,7 +110,9 @@
 										</div>
 									</a>
 								</article>
+-->
 								
+<!--
                                 <article class="style4">
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
@@ -119,6 +126,7 @@
 										</div>
 									</a>
 								</article>
+-->
 								
                                 <article class="style5">
 									<span class="image">
@@ -180,55 +188,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-        
-        <script>
-            const typedTextSpan = document.querySelector(".typed-text");
-            const cursorSpan = document.querySelector(".cursor");
-            const textArray = ["User Experience Designer.", "Product Designer.", "Interaction Designer.", "User Researcher."];
-            const textClr = ["blue", "#d62839", "#f6f930", "#f7567c"];
-            
-            const typingDelay = 50;
-            const erasingDelay = 50;
-            const newTextDelay = 1000; // Delay between current and next text
-            let textArrayIndex = 0;
-            let charIndex = 0;
-            
-            function type() {
-                if (charIndex < textArray[textArrayIndex].length) {
-                    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                    charIndex++;
-                    setTimeout(type, typingDelay);
-                    
-                } 
-                else {
-                    cursorSpan.classList.remove("typing");
-                    
-                    setTimeout(erase, newTextDelay);
-                }
-            }
-            function erase() {
-                if (charIndex > 0) {
-                    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-                    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-                    charIndex--;
-                    setTimeout(erase, erasingDelay);
-                } 
-                else {
-                    cursorSpan.classList.remove("typing");
-                    textArrayIndex++;
-                    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-                    setTimeout(type, typingDelay + 1100);
-                }
-            }
-            document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-                if(textArray.length) setTimeout(type, newTextDelay + 250);
-                
-            });
+        <script src="assets/js/typewriter.js"></script>
         
         
-        
-        </script>
         
 
         
