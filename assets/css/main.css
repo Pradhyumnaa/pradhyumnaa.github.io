@@ -2905,12 +2905,11 @@ li.dropdown {
 
 .name{
     display: inline-block;
-    color: white;
+    
     text-align: center;
     padding: 14px 16px;
-    float: left;
-    text-decoration: none;
-    font-family: 'Balsamiq Sans', cursive;
+    
+    
     font-size: 22px;
     
 }
