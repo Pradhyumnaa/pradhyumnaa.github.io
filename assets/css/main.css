@@ -2490,8 +2490,8 @@ input, select, textarea {
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
-					background-color: #505050;
-					opacity: 0.9;
+					background-color: #000000;
+					opacity: 0.90;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
@@ -2776,6 +2776,7 @@ input, select, textarea {
   }
 }
 
+/*
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100px;
@@ -2796,6 +2797,7 @@ input, select, textarea {
 #card3{
     background-color: #FFE548;
 }
+*/
 
 .lined{
     border: 2px solid black;
