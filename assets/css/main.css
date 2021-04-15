@@ -2802,8 +2802,15 @@ input, select, textarea {
 */
 
 .lined{
-    border: 2px solid black;
-    background-color: black;
+    border: 2px solid #144EAA;
+    background-color: #144EAA;
+}
+
+h1{
+    color: #144EAA;
+}
+h2{
+    color: #144EAA;
 }
 
 
