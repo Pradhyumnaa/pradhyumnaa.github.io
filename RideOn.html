@@ -226,7 +226,8 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" onclick="sendEmail();" value="Send Message" class="primary"/></li>
+										<form method="post"><li><input type="submit" onclick="sendEmail();" value="Send Message" class="primary"/></li></form>
+                                        
 										<li><input type="reset" value="Clear" /></li>
 									</ul>
 								</form>
@@ -277,7 +278,7 @@
                     Username: "theoreocupcake@gmail.com",
                     Password: "Hanuman5face!",
                     To: 'pradhyumnaag30@gmail.com',
-                    From: "sender@email_address.com",
+                    From: "theoreocupcake@gmail.com",
                     Subject: document.getElementById("email").value,
                     Body: document.getElementById("message").value,
       })
