@@ -2860,7 +2860,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-image: linear-gradient(to right, #0ba360 0%, #3cba92 100%);
+				background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
 
 
 			}
