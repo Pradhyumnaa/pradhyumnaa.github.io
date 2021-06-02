@@ -9,8 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 30;
-var waitTimer = 10000;
+var timerValue = 20;
+var waitTimer = 40;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -25,6 +25,8 @@ function setup() {
 	strokeWeight(2);
     
     setInterval(timeIt, 1000);
+    
+    setInterval(waittimeIt,1000);
     
     letters_for_blue = [random(four_letter), random(four_letter), random(four_letter), random(four_letter), random(five_letter), random(five_letter), random(five_letter), random(five_letter), random(six_letter), random(six_letter), random(six_letter), random(six_letter)];
     
@@ -96,7 +98,7 @@ function timeIt() {
 function drawTimer(){
     background(255,255,255);
     text(waitTimer,width/2,height/2);
-    setInterval(waittimeIt,1000);
+    //setInterval(waittimeIt,1000);
     
     if(waitTimer<1){
         userInputBlue();
