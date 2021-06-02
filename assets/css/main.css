@@ -2275,7 +2275,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: block;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
