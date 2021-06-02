@@ -1,5 +1,5 @@
 
-const typedTextSpan = document.querySelector(".typed-text");
+const typedTextSpan = document.querySelector(".typed-text2");
             const cursorSpan = document.querySelector(".cursor");
             const textArray = ["An Aspiring Cognitive Scientist."];
             const textClr = ["blue", "#d62839", "#f6f930", "#f7567c"];
