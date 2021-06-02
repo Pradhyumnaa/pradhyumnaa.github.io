@@ -9,7 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 15;
+var timerValue = 30;
+var waitTimer = 10000;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -59,7 +60,7 @@ function greenText(){
     text(letters_for_green[11],width/2,650);
     
     if (timerValue < 1){
-        userInputGreen();
+        drawTimer();
     }
 }
 
@@ -82,12 +83,28 @@ function buttonClicked(){
     writer.print("Actual For Green:");
     writer.print(userText);
     writer.close();
-    window.open('https://www.google.com/', "_self");
+    window.open('mailto:pradhyumnaag666@gmail.com?subject=Colour%20Short%20Term%20Memory%20Result&body=Please%20Attach%20the%204%20Text%20Files%20You%20Received%20while%20completing%20the%20test.%20Thank%20You%20so%20much%20for%20taking%20the%20test%20%3A)', "_self");
     
 }
 
 function timeIt() {
     if (timerValue > 0) {
         timerValue--;
+    }
+}
+
+function drawTimer(){
+    background(255,255,255);
+    text(waitTimer,width/2,height/2);
+    setInterval(waittimeIt,1000);
+    
+    if(waitTimer<1){
+        userInputGreen();
+    }
+}
+
+function waittimeIt(){
+    if(waitTimer >0){
+        waitTimer--;
     }
 }

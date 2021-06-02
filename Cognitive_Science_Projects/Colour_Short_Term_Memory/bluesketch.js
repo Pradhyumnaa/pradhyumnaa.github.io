@@ -9,7 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 15;
+var timerValue = 30;
+var waitTimer = 10000;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -59,7 +60,7 @@ function blueText(){
     text(letters_for_blue[11],width/2,650);
     
     if (timerValue < 1){
-        userInputBlue();
+        drawTimer();
     }
 }
 
@@ -89,5 +90,21 @@ function buttonClicked(){
 function timeIt() {
     if (timerValue > 0) {
         timerValue--;
+    }
+}
+
+function drawTimer(){
+    background(255,255,255);
+    text(waitTimer,width/2,height/2);
+    setInterval(waittimeIt,1000);
+    
+    if(waitTimer<1){
+        userInputBlue();
+    }
+}
+
+function waittimeIt(){
+    if(waitTimer >0){
+        waitTimer--;
     }
 }
