@@ -9,7 +9,7 @@ var button;
 
 var writer;
 
-var timerValue = 3;
+var timerValue = 20;
 
 var song;
 
