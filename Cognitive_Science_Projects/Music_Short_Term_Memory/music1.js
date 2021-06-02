@@ -95,7 +95,15 @@ function buttonClicked(){
 function timeIt() {
     timerValue--;
     
-    if (timerValue == 0){
+    if(timerValue < 0 && timerValue > -20){
+        //Write timer value
+        song.setLoop(true);
+        var x = timerValue * -1;
+        background(255,255,255);
+        text(x,width/2,height/2);
+    }
+    
+    if (timerValue == -20){
         userInputMusic1();
     }
 }
