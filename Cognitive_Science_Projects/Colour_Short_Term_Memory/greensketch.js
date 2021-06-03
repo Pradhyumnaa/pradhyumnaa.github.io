@@ -9,8 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 30;
-var waitTimer = 10000;
+var timerValue = 25;
+var waitTimer = 45;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -26,12 +26,15 @@ function setup() {
     
     setInterval(timeIt, 1000);
     
+    setInterval(waittimeIt,1000);
+    
     letters_for_green = [random(four_letter), random(four_letter), random(four_letter), random(four_letter), random(five_letter), random(five_letter), random(five_letter), random(five_letter), random(six_letter), random(six_letter), random(six_letter), random(six_letter)];
     
     writer = createWriter("greenResults.txt");
     
     writer.print("Expected for Green:");
     writer.print(letters_for_green);
+    writer.print("");
 }
 
 function draw() {
@@ -74,16 +77,25 @@ function userInputGreen(){
     
     button.mousePressed(buttonClicked);
     
-    noLoop();;
+    noLoop();
 }
 
 function buttonClicked(){
     var userText = input.value();
+    writer.print("Start Time");
+    writer.print(hour() + ":" + minute());
+    writer.print("");
+    
     
     writer.print("Actual For Green:");
     writer.print(userText);
+    
+    writer.print("");
+    writer.print("End Time");
+    writer.print(hour() + ":" + minute());
+    
     writer.close();
-    window.open('mailto:pradhyumnaag666@gmail.com?subject=Colour%20Short%20Term%20Memory%20Result&body=Please%20Attach%20the%204%20Text%20Files%20You%20Received%20while%20completing%20the%20test.%20Thank%20You%20so%20much%20for%20taking%20the%20test%20%3A)', "_self");
+    window.open('mailto:pradhyumnaag666@gmail.com?subject=Short%20Term%20Memory%20-%20Text%20Colour%20Experiment%20Results&body=Please%20attach%20the%204%20text%20files%20you%20received%20while%20completing%20the%20experiment.%20Thank%20You%20so%20much%20for%20helping%20me%20out!%20%3A)');
     
 }
 
@@ -96,7 +108,7 @@ function timeIt() {
 function drawTimer(){
     background(255,255,255);
     text(waitTimer,width/2,height/2);
-    setInterval(waittimeIt,1000);
+    //setInterval(waittimeIt,1000);
     
     if(waitTimer<1){
         userInputGreen();

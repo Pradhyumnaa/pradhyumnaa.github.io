@@ -9,8 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 30;
-var waitTimer = 10000;
+var timerValue = 25;
+var waitTimer = 45;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -26,12 +26,15 @@ function setup() {
     
     setInterval(timeIt, 1000);
     
+    setInterval(waittimeIt,1000);
+    
     letters_for_red = [random(four_letter), random(four_letter), random(four_letter), random(four_letter), random(five_letter), random(five_letter), random(five_letter), random(five_letter), random(six_letter), random(six_letter), random(six_letter), random(six_letter)];
     
     writer = createWriter("redResults.txt");
     
     writer.print("Expected for Red:");
     writer.print(letters_for_red);
+    writer.print("");
 }
 
 function draw() {
@@ -79,9 +82,18 @@ function userInputRed(){
 
 function buttonClicked(){
     var userText = input.value();
+    writer.print("Start Time");
+    writer.print(hour() + ":" + minute());
+    writer.print("");
+    
     
     writer.print("Actual For Red:");
     writer.print(userText);
+    
+    writer.print("");
+    writer.print("End Time");
+    writer.print(hour() + ":" + minute());
+    
     writer.close();
     window.open('blue.html', "_self");
     
@@ -96,7 +108,7 @@ function timeIt() {
 function drawTimer(){
     background(255,255,255);
     text(waitTimer,width/2,height/2);
-    setInterval(waittimeIt,1000);
+    //setInterval(waittimeIt,1000);
     
     if(waitTimer<1){
         userInputRed();

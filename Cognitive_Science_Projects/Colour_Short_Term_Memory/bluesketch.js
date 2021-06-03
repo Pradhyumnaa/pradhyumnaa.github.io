@@ -9,8 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 20;
-var waitTimer = 40;
+var timerValue = 25;
+var waitTimer = 45;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -34,6 +34,7 @@ function setup() {
     
     writer.print("Expected for Blue:");
     writer.print(letters_for_blue);
+    writer.print("");
 }
 
 function draw() {
@@ -81,9 +82,18 @@ function userInputBlue(){
 
 function buttonClicked(){
     var userText = input.value();
+    writer.print("Start Time");
+    writer.print(hour() + ":" + minute());
+    writer.print("");
+    
     
     writer.print("Actual For Blue:");
     writer.print(userText);
+    
+    writer.print("");
+    writer.print("End Time");
+    writer.print(hour() + ":" + minute());
+    
     writer.close();
     window.open('green.html', "_self");
     
