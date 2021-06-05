@@ -9,7 +9,7 @@ var button;
 
 var writer;
 
-var timerValue = 30;
+var timerValue = 20;
 
 var song;
 
@@ -29,9 +29,9 @@ function setup() {
     
     letters_for_music1 = [random(four_letter), random(four_letter), random(four_letter), random(four_letter), random(five_letter), random(five_letter), random(five_letter), random(five_letter), random(six_letter), random(six_letter), random(six_letter), random(six_letter)];
     
-    writer = createWriter("music1Results.txt");
+    writer = createWriter("musicResults.txt");
     
-    writer.print("Expected for Music 1:");
+    writer.print("Expected:");
     writer.print(letters_for_music1);
 }
 
@@ -66,6 +66,7 @@ function music1Text(){
     text(letters_for_music1[11],width/2,650);
     
 }
+
 
 function userInputMusic1(){
     song.stop();
@@ -112,7 +113,7 @@ function createStartButton(){
     noStroke();
     fill(0,0,0);
     textSize(20);
-    var introText = text("In this experiment, I aim to find out what type of Music Genre aids in Short Term Memory. When you click start, you will be taken to a page with 12 randomly generated words. Your aim is to try and remember as much as you can within 30 seconds. Once the timer is up, you will be taken to a prompt where you will type in as many words as you remember. When you click submit, you will receive the results and will be taken to the next Music Genre. Good Luck!!", width/2 - 600, 300,500,500);
+    var introText = text("In this experiment, I aim to find out what type of Music Genre aids in Short Term Memory. When you click start, you will be taken to a page with 12 randomly generated words. Your aim is to try and remember as much as you can within 15 seconds. Once the timer is up, you will be taken to a prompt where you will type in as many words as you remember. When you click submit, you will receive the results and will be taken to the next Music Genre. Good Luck!!", width/2 - 600, 300,500,500);
     
     button2 = createButton('Start');
     button2.position(width/2,height/2);
