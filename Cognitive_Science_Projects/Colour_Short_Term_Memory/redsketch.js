@@ -9,8 +9,8 @@ var button;
 
 var writer;
 
-var timerValue = 25;
-var waitTimer = 45;
+var timerValue = 20;
+var waitTimer = 35;
 
 function preload() {
     four_letter = loadStrings('4_letter_words.txt');
@@ -57,10 +57,6 @@ function redText(){
     text(letters_for_red[2],width/2,400);
     text(letters_for_red[6],width/2,450);
     text(letters_for_red[10],width/2,500);
-    
-    text(letters_for_red[3],width/2,550);
-    text(letters_for_red[7],width/2,600);
-    text(letters_for_red[11],width/2,650);
     
     if (timerValue < 1){
         drawTimer();
