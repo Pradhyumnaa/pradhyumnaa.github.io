@@ -58,6 +58,10 @@ function redText(){
     text(letters_for_red[6],width/2,450);
     text(letters_for_red[10],width/2,500);
     
+    text(letters_for_red[3],width/2,400);
+    text(letters_for_red[7],width/2,450);
+    text(letters_for_red[11],width/2,500);
+    
     if (timerValue < 1){
         drawTimer();
     }

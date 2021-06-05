@@ -58,6 +58,10 @@ function greenText(){
     text(letters_for_green[6],width/2,450);
     text(letters_for_green[10],width/2,500);
     
+    text(letters_for_green[3],width/2,400);
+    text(letters_for_green[7],width/2,450);
+    text(letters_for_green[11],width/2,500);
+    
     
     if (timerValue < 1){
         drawTimer();

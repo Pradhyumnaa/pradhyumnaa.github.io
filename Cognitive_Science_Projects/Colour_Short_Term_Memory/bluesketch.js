@@ -58,6 +58,10 @@ function blueText(){
     text(letters_for_blue[6],width/2,450);
     text(letters_for_blue[10],width/2,500);
     
+    text(letters_for_blue[3],width/2,400);
+    text(letters_for_blue[7],width/2,450);
+    text(letters_for_blue[11],width/2,500);
+    
     
     if (timerValue < 1){
         drawTimer();
