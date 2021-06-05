@@ -95,7 +95,9 @@ function buttonClicked(){
     writer.print(hour() + ":" + minute());
     
     writer.close();
-    window.open('red.html', "_self");
+    window.open('mailto:pradhyumnaag666@gmail.com?subject=Short%20Term%20Memory%20-%20Text%20Colour%20Experiment%20Results&body=Please%20attach%20the%204%20text%20files%20you%20received%20while%20completing%20the%20experiment.%20Thank%20You%20so%20much%20for%20helping%20me%20out!%20%3A)');
+    
+    window.open('https://pradhyumnaa.github.io/cognitiveIndex', "_self");
     
 }
 
