@@ -51,9 +51,9 @@ function setup() {
 function draw() {
     createStartButton1();
     createStartButton2();
-    createStartButton3();
+    //createStartButton3();
     createStartButton4();
-    createStartButton5();
+    //createStartButton5();
     createStartButton6();
     createStartButton7();
 }
@@ -61,9 +61,9 @@ function draw() {
 function music1Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -100,9 +100,9 @@ function music1Text(){
 function music2Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -141,9 +141,9 @@ function music2Text(){
 function music3Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -180,9 +180,9 @@ function music3Text(){
 function music4Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -219,9 +219,9 @@ function music4Text(){
 function music5Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -258,9 +258,9 @@ function music5Text(){
 function music6Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -289,7 +289,7 @@ function music6Text(){
     text(letters_for_music1[7],width/2,600);
     text(letters_for_music1[11],width/2,650);
     
-    writer.write("Allegro-Vivace (120–176 BPM)");
+    writer.write("Allegro-Vivace (172–176 BPM)");
     writer.write("");
     
 }
@@ -297,9 +297,9 @@ function music6Text(){
 function music7Text(){
     button1.remove();
     button2.remove();
-    button3.remove();
+    //button3.remove();
     button4.remove();
-    button5.remove();
+    //button5.remove();
     button6.remove();
     button7.remove();
     
@@ -340,7 +340,7 @@ function createStartButton1(){
     var introText = text("In this experiment, I aim to find out what type of Piano Tempo aids in Short Term Memory. When you click a tempo, you will be taken to a page with 12 randomly generated words. Your aim is to try and remember as much as you can within 15 seconds. Once the timer is up, you will be taken to a prompt where you will type in as many words as you remember. When you click submit, you will receive the results. Good Luck!!", width/2 - 600, 300,500,500);
     
     button1 = createButton('Lento');
-    button1.position(width/2,height/2 - 150);
+    button1.position(width/2,height/2 - 100);
     button1.mousePressed(music1Text);
     noLoop();
     
@@ -353,23 +353,23 @@ function createStartButton2(){
 
     
     button2 = createButton('Larghetto');
-    button2.position(width/2,height/2 - 100);
+    button2.position(width/2,height/2 - 50);
     button2.mousePressed(music2Text);
     noLoop();
     
 }
 
-function createStartButton3(){
-    noStroke();
-    fill(0,0,0);
-    textSize(20);
-    
-    button3 = createButton('Andante-Moderato');
-    button3.position(width/2,height/2 - 50);
-    button3.mousePressed(music3Text);
-    noLoop();
-    
-}
+//function createStartButton3(){
+//    noStroke();
+//    fill(0,0,0);
+//    textSize(20);
+//    
+//    button3 = createButton('Andante-Moderato');
+//    button3.position(width/2,height/2 - 50);
+//    button3.mousePressed(music3Text);
+//    noLoop();
+//    
+//}
 
 function createStartButton4(){
     noStroke();
@@ -384,18 +384,18 @@ function createStartButton4(){
     
 }
 
-function createStartButton5(){
-    noStroke();
-    fill(0,0,0);
-    textSize(20);
-    
-    
-    button5 = createButton('Allegretto');
-    button5.position(width/2,height/2+50);
-    button5.mousePressed(music5Text);
-    noLoop();
-    
-}
+//function createStartButton5(){
+//    noStroke();
+//    fill(0,0,0);
+//    textSize(20);
+//    
+//    
+//    button5 = createButton('Allegretto');
+//    button5.position(width/2,height/2+50);
+//    button5.mousePressed(music5Text);
+//    noLoop();
+//    
+//}
 
 function createStartButton6(){
     noStroke();
@@ -404,7 +404,7 @@ function createStartButton6(){
    
     
     button6 = createButton('Allegro-Vivace');
-    button6.position(width/2,height/2 +100);
+    button6.position(width/2,height/2 +50);
     button6.mousePressed(music6Text);
     noLoop();
     
@@ -416,7 +416,7 @@ function createStartButton7(){
     textSize(20);
     
     button7 = createButton('Presto');
-    button7.position(width/2,height/2 + 150);
+    button7.position(width/2,height/2 + 100);
     button7.mousePressed(music7Text);
     noLoop();
     
