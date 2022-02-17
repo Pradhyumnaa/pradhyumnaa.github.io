@@ -215,6 +215,7 @@ input, select, textarea {
 	h6 {
 		font-size: 0.7em;
 	}
+	
 
 	@media screen and (max-width: 736px) {
 
@@ -4006,7 +4007,7 @@ input, select, textarea {
 }
 
 p{
-    font-size: 18px;
+    font-size: 23px;
 }
 
 #appintro{
