@@ -73,6 +73,7 @@
 										class="form-control"
 										id="name"
 										placeholder="Enter Your Name"
+										required
 									  />
 									</div>
 
@@ -87,6 +88,7 @@
 										class="form-control"
 										id="email"
 										placeholder="Enter Your Email"
+										required
 									  />
 									</div>
                                     
@@ -94,7 +96,7 @@
 						
 									<div class="form-group">
 									  <label for="message">Message</label>
-									  <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+									  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
 									</div>
 
 									<br>
@@ -127,7 +129,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/typewriter.js"></script>
 			
 			
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -153,14 +154,8 @@
 			</script>
 			
 			<script>
-			emailjs.sendForm("service_hfzc61p", "template_walk6ee", "#myForm")
-			</script>
-			
-			<script>
 			// listen to the form submission
-			document
-			.getElementById("myForm")
-			.addEventListener("submit", function (event) {
+			document.getElementById("myForm").addEventListener("submit", function (event) {
 				event.preventDefault();
 				const serviceID = "service_hfzc61p";
 				const templateID = "template_walk6ee";
@@ -169,12 +164,12 @@
 				emailjs.sendForm(serviceID, templateID, this).then(
 					(response) => {
 						console.log("SUCCESS!", response.status, response.text);
-						alert("SUCCESS!");
+						alert("Sent Succesfully!");
 					},
 					
 					(error) => {
 						console.log("FAILED...", error);
-						alert("FAILED...", error);
+						alert("Sending Failed!", error);
 					}
 					);
 				});
