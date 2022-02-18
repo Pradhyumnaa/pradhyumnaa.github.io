@@ -42,3 +42,4 @@ const typedTextSpan = document.querySelector(".typed-text");
                 if(textArray.length) setTimeout(type, newTextDelay + 250);
                 
             });
+            

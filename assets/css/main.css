@@ -4024,4 +4024,7 @@ p{
     font-family: 'Playfair Display', serif;
 }
 
+#pradsEmail{
+	cursor: pointer;
+}
 

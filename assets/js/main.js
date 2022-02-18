@@ -333,3 +333,8 @@
 			});
 
 })(jQuery);
+
+function copytoClip() {
+	navigator.clipboard.writeText("pradhyumnaag30@gmail.com");
+	document.getElementById("pradsEmail").innerHTML = "Email Copied!"
+  }
