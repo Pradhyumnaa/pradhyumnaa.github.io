@@ -3998,7 +3998,7 @@ input, select, textarea {
   100%  { background-color: #ccc; }
 }
 
-.typed-text{
+.typed-text2{
     color: #FF299C;
     font-family: 'Playfair Display', serif; 
 }
@@ -4019,7 +4019,7 @@ p{
     font-size: 24px;
 }
 
-.typed-text2{
+.typed-text{
     color: #0ACDFF;
     font-family: 'Playfair Display', serif;
 }
@@ -4027,5 +4027,22 @@ p{
 #pradsEmail{
 	cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

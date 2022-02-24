@@ -1,7 +1,7 @@
 
 const typedTextSpan = document.querySelector(".typed-text");
             const cursorSpan = document.querySelector(".cursor");
-            const textArray = ["User Experience Designer.", "Product Designer.", "Interaction Designer.", "User Researcher."];
+            const textArray = ["UX Designer.", "Product Designer.", "Interaction Designer.", "User Researcher."];
             const textClr = ["blue", "#d62839", "#f6f930", "#f7567c"];
             
             const typingDelay = 50;
